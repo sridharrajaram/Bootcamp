@@ -1,0 +1,35 @@
+<div>: The Content Division element
+    >> The <div> HTML element is the generic container for flow content. 
+    >> It has no effect on the content or layout until styled in some way using CSS 
+        (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).
+    >> As a "pure" container, the <div> element does not inherently represent anything.
+    >> Instead, it's used to group content so it can be easily styled using the class or id attributes,
+        marking a section of a document as being written in a different language (using the lang attribute), and so on.
+
+    >> Note: The align attribute is obsolete; do not use it anymore. 
+        Instead, you should use CSS properties or techniques such as CSS Grid or CSS Flexbox to align and position <div> elements on the page.
+
+    >> The <div> element should be used only when no other semantic element (such as <article> or <nav>) is appropriate.
+
+
+<section>: The Generic Section element
+
+    >> The <section> HTML element represents a generic standalone section of a document, 
+        which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.
+    >> Using a section without a heading
+        Circumstances where you might see <section> used without a heading are typically found in web application/UI sections
+        rather than in traditional document structures. In a document, it doesn't really make any sense to have a separate section of content without a heading to describe its contents. 
+        Such headings are useful for all readers, but particularly useful for users of assistive technologies like screenreaders, and they are also good for SEO.
+        
+<article>: The Article Contents element
+
+    >> The <article> HTML element represents a self-contained composition in a document, page, application, or site, 
+       which is intended to be independently distributable or reusable (e.g., in syndication). 
+       Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment,
+       an interactive widget or gadget, or any other independent item of content.
+    >> A given document can have multiple articles in it; for example, on a blog that shows the text of each article one after another as the reader scrolls,
+       each post would be contained in an <article> element, possibly with one or more <section>s within.
+    >> Each <article> should be identified, typically by including a heading (<h1>-<h6> element) as a child of the <article> element.
+    >> When an <article> element is nested, the inner element represents an article related to the outer element. For example, the comments of a blog post can be <article> elements nested in the <article> representing the blog post.
+    >> Author information of an <article> element can be provided through the <address> element, but it doesn't apply to nested <article> elements.
+    >> The publication date and time of an <article> element can be described using the datetime attribute of a <time> element. Note that the pubdate attribute of <time> is no longer a part of the W3C HTML5 standard.
