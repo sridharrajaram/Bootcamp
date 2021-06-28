@@ -39,10 +39,15 @@
           var totalPop = data.map(ele => {return ele.population}).reduce(((a,b)=> a+b),0);
           console.log(totalPop);
 
-/*           //Print the country which use US Dollars as currency.
-          let dollarCoun = data.map(ele => ele.currencies);
-          console.log(dollarCoun);
-*/
+          //Print the country which use US Dollars as currency.
+          let out =[];
+          let dollarCoun = data.map(ele => ele.currencies.map(obj=>{
+          if(obj.name==="United States dollar")
+          {
+            out.push(ele.name);
+          }
+          }));
+          console.log(out);
 
         };
         xhr.send();
